@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 水平居中 ===========================*/
+        /* text-align: center  +  display: inline-block */
+        .parent {
+            text-align: center
+        }
+
+        .child {
+            display: inline-block;
+        }
+
+        /* display: table  +  margin: 0 auto */
+        .child {
+            display: table;
+            margin: 0 auto;
+        }
+
+        /* absolute  +  transform: translateX(-50%) */
+        .parent {
+            position: relative;
+        }
+
+        .child {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        /* display:flex +  justify-content: center   或者 */
+        /* display:flex +  margin:0 auto  */
+        .parent {
+            display: flex;
+            justify-content: center;
+        }
+
+        .child {
+            margin: 0 auto
+        }
+
+        /* 垂直居中 ===================*/
+        /* display: table-cell +  vertical-align: middle  */
+        .parent {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        /* absolute  +  transform: translateY(-50%) */
+        .parent {
+            position: relative;
+        }
+
+        .child {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+
+        /* display: flex +  align-content: center */
+        .parent {
+            display: flex;
+            align-items: center;
+        }
+
+
+        /* 水平垂直居中 =================*/
+        /* inline-block+ text-align: center + display: table-cell +vertical-align: middle */
+        .parent {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .child {
+            display: inline-block;
+        }
+
+        /*  absolute + transform: translate(-50%,-50%) */
+        .parent {
+            position: relative;
+
+        }
+
+        .child {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        /*  flex + justify-content  +  align-items */
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 水平居中 -->
+    <div class="parent">
+        <div class="child">demo</div>
+    </div>
+</body>
+
+</html>
